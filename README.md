@@ -1,3 +1,3 @@
-# starter-deno
+# logx
 
-A [Deno](https://deno.land/) stater template.
+TBD.

@@ -6,6 +6,8 @@
     "editor.formatOnSave": true
   },
   "cSpell.words": [
-    "deno"
+    "datetime",
+    "deno",
+    "logx"
   ]
 }
