@@ -18,7 +18,7 @@ export function setTimezoneOffset(offset: number) {
  * Get logx's timezone offset for.
  * @param offset Timezone offset in minutes.
  */
-export function getTimezoneOffset() {
+export function getTimezoneOffset(): number {
   return timezoneOffset;
 }
 
