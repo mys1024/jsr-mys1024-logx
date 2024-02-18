@@ -1,4 +1,4 @@
-import { colors } from "./deps.ts";
+import * as colors from "@std/colors";
 import { iso8601WithOffset } from "./utils.ts";
 
 /* -------------------------------------------------- timezone offset -------------------------------------------------- */

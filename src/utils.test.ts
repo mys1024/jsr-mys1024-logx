@@ -1,4 +1,4 @@
-import { assertEquals } from "./deps.ts";
+import { assertEquals } from "@std/assert";
 import { iso8601WithOffset } from "./utils.ts";
 
 Deno.test("iso8601WithOffset()", () => {

@@ -1,5 +1,5 @@
-import { assertEquals } from "./deps.ts";
-import * as logx from "./logx.ts";
+import { assertEquals } from "@std/assert";
+import * as logx from "./main.ts";
 
 Deno.test("timezone offset", () => {
   assertEquals(logx.getTimezoneOffset(), 0);

@@ -1,3 +1,3 @@
-# logx
+# [jsr-mys1024-logx](https://jsr.io/@mys1024/logx)
 
-TBD.
+Print logs in better format.
