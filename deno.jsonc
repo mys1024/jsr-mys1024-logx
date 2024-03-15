@@ -13,8 +13,8 @@
     "publish": "deno publish"
   },
   "imports": {
-    "@std/assert": "jsr:@std/assert@0.216",
-    "@std/colors": "jsr:@std/fmt@0.216/colors"
+    "@std/assert": "jsr:@std/assert@0.220",
+    "@std/colors": "jsr:@std/fmt@0.220/colors"
   },
   "exports": {
     ".": "./src/mod.ts"
