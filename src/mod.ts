@@ -15,14 +15,14 @@ export function setTimezoneOffset(offset: number) {
 }
 
 /**
- * Get logx's timezone offset for.
+ * Get logx's timezone offset.
  * @param offset Timezone offset in minutes.
  */
 export function getTimezoneOffset(): number {
   return timezoneOffset;
 }
 
-/* -------------------------------------------------- normalized log function -------------------------------------------------- */
+/* -------------------------------------------------- log functions -------------------------------------------------- */
 
 const labels = {
   info: colors.white(colors.bgBlue(" INFO ")),
@@ -34,18 +34,14 @@ const labels = {
 function normalizedLog(options: {
   type: "info" | "warn" | "error" | "log";
   messages: unknown[];
-  timezoneOffset?: number;
 }) {
-  const { type, messages, timezoneOffset: _timezoneOffset = timezoneOffset } =
-    options;
+  const { type, messages } = options;
   console[type](
     labels[type],
     colors.gray(iso8601WithOffset(Date.now(), timezoneOffset)),
     ...messages,
   );
 }
-
-/* -------------------------------------------------- log functions -------------------------------------------------- */
 
 export function info(...messages: unknown[]) {
   normalizedLog({

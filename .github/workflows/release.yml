@@ -1,12 +1,13 @@
-name: Publish
+name: Release
 
 on:
   push:
-    branches:
-      - main
+    tags:
+      - 'v*'
 
 jobs:
-  publish:
+  publish-to-jsr:
+    name: Publish to JSR
     runs-on: ubuntu-latest
 
     permissions:
