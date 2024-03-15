@@ -1,5 +1,5 @@
 {
-  "name": "@mys1024/logx",
+  "name": "@mys/logx",
   "version": "1.2.2",
   "tasks": {
     "run": "deno run src/mod.ts",
